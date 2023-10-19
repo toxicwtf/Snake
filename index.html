@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        canvas {
+            box-shadow: black 20px 10px 50px;
+            border-radius: 2px;
+        }
+
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            width: 40px;
+            border: 1px solid rgb(29, 29, 29);
+            border-radius: 4px;
+            background-color: #1a1a1a;
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+            color: red;
+            cursor: pointer;
+            font-family: sans-serif;
+        }
+
+        .Gameclick {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            margin-top: 10px;
+            gap: 10px;
+        }
+
+        @media(max-width: 450px) {
+            canvas {
+                width: 300px;
+            }
+        }
+       
+    </style>
+    <title>snake game</title>
+</head>
+
+<body>
+    <h2>Snake</h2>
+    <canvas id="Bgame" width="400px" height="400px"></canvas>
+    <div class="Gameclick">
+        <button class="up">*<br>|</button>
+            <button class="down"><</button>
+            <button class="left">| <br> *</button>
+            <button class="right">></button>
+    </div>
+    <script src="game.js"></script>
+</body>
+
+</html>
